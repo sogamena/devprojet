@@ -96,6 +96,7 @@ nav #nav .droite .bouton:nth-of-type(2){
 }
 #contenuHeader .headerContenu p{
     font-size: 2.5vw;
+    line-height: 2.5vw;
 }
 
 /* #contenuHeader #illustration{
