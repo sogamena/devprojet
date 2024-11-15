@@ -79,16 +79,28 @@ nav #nav .droite .bouton:nth-of-type(2){
 
 /* contenuHeader */
 
-#contenuHeader {
+/* #contenuHeader {
     display: flex;
     width: 90%;
     margin: 0 auto;
     margin-top: 3vw;
     justify-content: space-between;
     color: white;
+} */
+#contenuHeader {
+    width: 60%;
+    color: white;
+    margin: 10vw auto;
+    text-align: center;
+}
+#contenuHeader h1{
+    font-size: 5vw;
+}
+#contenuHeader p{
+    font-size: 3vw;
 }
 
-#contenuHeader .headerContenu{
+/* #contenuHeader .headerContenu{
     width: 50vw;
 }
 #contenuHeader .headerContenu h1{
@@ -97,7 +109,7 @@ nav #nav .droite .bouton:nth-of-type(2){
 #contenuHeader .headerContenu p{
     font-size: 2.5vw;
     line-height: 2.8vw;
-}
+} */
 
 /* #contenuHeader #illustration{
     background: red;
@@ -105,7 +117,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     height: 40vw;
     border-radius: 50%;
 } */
-#contenuHeader #illustration .rondGradient {
+/* #contenuHeader #illustration .rondGradient {
     background: linear-gradient(43deg,#F96464,#C01BC6);
     width: 25vw;
     height: 25vw;
@@ -119,7 +131,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     height: 20vw;
     border-radius: 50%;
     margin: auto auto;
-}
+} */
 /* #contenuHeader #illustration .rondGradient .rondBlanc .triangle{
     background: rgb(213, 92, 6);
     width: 20vw;
@@ -132,7 +144,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     -o-border-radius: 5%;
 } */
 
-#contenuHeader #illustration .rondGradient .rondBlanc .triangle {
+/* #contenuHeader #illustration .rondGradient .rondBlanc .triangle {
     background: #01B4BA;
     position: relative;
     width: 19vw;
@@ -146,7 +158,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
     z-index: 0;
-}
+} */
 /* #contenuHeader #illustration .rondGradient .rondBlanc .triangle{
     margin-top: 5vw;
     margin-left: 5vw;
@@ -155,7 +167,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     width: 50%;
 } */
 
-#contenuHeader #illustration .rondGradient .rondBlanc .rond {
+/* #contenuHeader #illustration .rondGradient .rondBlanc .rond {
     position: absolute;
     background: rgb(195, 5, 5);
     width: 8vw;
@@ -170,7 +182,7 @@ nav #nav .droite .bouton:nth-of-type(2){
 }
 #contenuHeader #illustration .rondGradient .rondBlanc .rond {
     z-index: 2 !important;
-}
+} */
 
 /* Section programme expert */
 
@@ -187,7 +199,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px; /* Adjust the value to control spacing */
+    gap: 3vw; /* Adjust the value to control spacing */
 }
 
 .programme .coursExpert{
@@ -205,7 +217,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     width: 30%;
 }
 .programme .coursExpert .coursTexte h2{
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 .programme .coursExpert .coursTexte p{
     font-size: 1.8vw;
@@ -305,11 +317,42 @@ nav #nav .droite .bouton:nth-of-type(2){
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+#valeur{
+    width: 90vw;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 5vw 0;
+}
+#valeur #choisir h1{
+    font-size: 3vw;
+    color: #F96464;
+}
+#valeur #choisir p{
+    font-size: 2vw;
+}
+#valeur #choisir button{
+    padding: 1.5vw 2.5vw;
+    font-size: 2vw;
+    border: none;
+    background: #F9646490;
+    color: white;
+    border-radius: 5vw;
+    -webkit-border-radius: 5vw;
+    -moz-border-radius: 5vw;
+    -ms-border-radius: 5vw;
+    -o-border-radius: 5vw;
+}
+#valeur #choisir button:hover{
+    background: #F96464;
+}
 /* Style footer */
 footer{
     position: relative;
     background: #01406D;
     padding-bottom: 1.5vw;
+    margin-top: 2vw;
 }
 #contenuMenuFooter {
     display: grid;
