@@ -336,7 +336,7 @@ nav #nav .droite .bouton:nth-of-type(2){
 }
 #valeur #choisir button{
     border: none;
-    background: #ffa500;
+    background: #ffa600dd;
     padding: 0.5vw 2vw;
     font-size: 2vw;
     border-radius: 50px;
@@ -344,6 +344,10 @@ nav #nav .droite .bouton:nth-of-type(2){
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+}
+
+#valeur #choisir button:hover{
+    background: #ffa600;
 }
 /* Style footer */
 footer{
@@ -357,6 +361,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     width: 90vw;
     margin: 0 auto;
+    padding-top: 2vw;
 }
 
 #contenuMenuFooter .piedPage h4{
@@ -380,6 +385,7 @@ footer{
 #contenuFooter p{
     font-size: 2vw;
     padding: 10vw auto;
+    padding-top: 1.5vw;
 }
 
 
