@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style background */
+body {
+    background: linear-gradient(90deg, #01406D, #01B4BA);
+}
+
+/* Style navigation bar */
+nav{
+    background-color: #01406D;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.629);
+}
+nav #nav{
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Display flex */
+nav #nav,
+nav #nav .gauche,
+nav #nav .gauche ul{
+    display: flex;
+}
+
+/* Style logo */
+nav #nav .gauche .logo img{
+    width: 15vw !important;
+}
+
+/* Style sur menu */
+nav #nav .gauche ul{
+    list-style: none;
+    margin-top: 0.7vw;
+    margin-left: -3vw;
+}
+nav #nav .gauche ul li{
+    margin-left: 2vw;
+}
+nav #nav .gauche ul li a{
+    text-decoration: none !important;
+    color: white;
+    font-size: 2vw;
+}
+nav #nav .gauche ul li a:hover{
+    color: #d62f11;
+}
+
+/* Style sous bouton */
+
+nav #nav .droite{
+    margin-top: 0.5vw;
+}
+nav #nav .droite .bouton{
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    background: none;
+    text-align: center;
+    align-items: center;
+    font-size: 1.8vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
+}
+nav #nav .droite .bouton:nth-of-type(1){
+    color: #ffffff;
+    border: 0.2vw solid #d62f11;
+    padding: 0.2vw 1vw;
+}
+nav #nav .droite .bouton:nth-of-type(2){
+    background-color: #d62f11;
+    padding: 0.4vw 1.1vw;
+}
+
+/* contenuHeader */
+
+#contenuHeader {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3vw;
+    justify-content: space-between;
+    color: white;
+}
+
+#contenuHeader .headerContenu{
+    width: 50vw;
+}
+#contenuHeader .headerContenu h1{
+    font-size: 4vw;
+}
+#contenuHeader .headerContenu p{
+    font-size: 2.5vw;
+}
+
+/* #contenuHeader #illustration{
+    background: red;
+    width: 30vw;
+    height: 40vw;
+    border-radius: 50%;
+} */
+#contenuHeader #illustration .rondGradient {
+    background: linear-gradient(43deg,#F96464,#C01BC6);
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    margin-top: 12vw;
+    display: flex;
+}
+#contenuHeader #illustration .rondGradient .rondBlanc{
+    background: greenyellow;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin: auto auto;
+}
+/* #contenuHeader #illustration .rondGradient .rondBlanc .triangle{
+    background: rgb(213, 92, 6);
+    width: 20vw;
+    height: 20vw;
+    clip-path: polygon(49% 23%, 0% 100%, 100% 100%);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+} */
+
+#contenuHeader #illustration .rondGradient .rondBlanc .triangle {
+    background: #01B4BA;
+    position: relative;
+    width: 19vw;
+    height: 19vw;
+    margin-top: -1.5vw;
+    margin-left: -2.5vw;
+    clip-path: polygon(48% 37%, 29% 88%, 86% 84%);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    z-index: 0;
+}
+/* #contenuHeader #illustration .rondGradient .rondBlanc .triangle{
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+#contenuHeader #illustration .rondGradient .rondBlanc .triangle img{
+    width: 50%;
+} */
+
+#contenuHeader #illustration .rondGradient .rondBlanc .rond {
+    position: absolute;
+    background: rgb(195, 5, 5);
+    width: 8vw;
+    height: 8vw;
+    margin-top: 5.5vw;
+    margin-left: 6.8vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#contenuHeader #illustration .rondGradient .rondBlanc .rond {
+    z-index: 2 !important;
+}
+
+/* Section programme expert */
+
+
+
+#programme{
+    width: 100vw;
+    margin-top: 5vw;
+    background: rgb(244, 244, 244);
+}
+
+.programme {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* Adjust the value to control spacing */
+}
+
+.programme .coursExpert{
+    text-align: center;
+    background: #ffffff;
+    margin: 3vw auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.353);
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+}
+.programme .coursExpert #coursIcon img{
+    width: 30%;
+}
+.programme .coursExpert .coursTexte h2{
+    font-size: 3vw;
+}
+.programme .coursExpert .coursTexte p{
+    font-size: 1.8vw;
+}
+
+/* Section ce qui nous etudiants dit */
+#etudiants{
+    width: 90vw;
+    margin: 0 auto;
+}
+#etudiants h1{
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+}
+.etudiants {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.etudiants .profil{
+    text-align: center;
+}
+.etudiants .profil img{
+    width: 80%;
+}
+.etudiants .textImg h5{
+    font-size: 2.5vw;
+}
+.etudiants .textImg p{
+    font-size: 1.8vw;
+}
+
+/* Style footer */
+footer{
+    position: relative;
+    background: #01406D;
+    padding-bottom: 1.5vw;
+}
+#contenuMenuFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#contenuMenuFooter .piedPage h4{
+    font-size: 3vw;
+    color: #01B4BA;
+}
+#contenuMenuFooter .piedPage p{
+    font-size: 2vw;
+    color: white;
+}
+
+#contenuFooter{
+    width: 90vw !important;
+    text-align: center;
+    color: white !important;
+    border-top: 2px solid white !important;
+    margin: 0 auto;
+    padding: 1vw auto;
+}
+
+#contenuFooter p{
+    font-size: 2vw;
+    padding: 10vw auto;
+}
+
+
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/popup.css">
+    <title>Hackaton</title>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav">
+                <div class="gauche">
+                    <div class="logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Cours</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">A propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="droite">
+                    <button onclick="openModal('loginModal')" class="bouton">Connexion</button>
+                    <button onclick="openModal('registerModal')" class="bouton">Inscription</button>
+                </div>
+
+                <!-- Modal Connexion -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+                    <h2>Connexion</h2>
+                    <form id="loginForm" onsubmit="return handleSubmit(event, 'login')">
+                        <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="loginPassword">Mot de passe:</label>
+                        <input type="password" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Se connecter</button>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- Modal Inscription -->
+                <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+                    <h2>Inscription</h2>
+                    <form id="registerForm" onsubmit="return handleSubmit(event, 'register')">
+                        <div class="form-group">
+                        <label for="registerName">Nom:</label>
+                        <input type="text" id="registerName" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="registerEmail">Email:</label>
+                        <input type="email" id="registerEmail" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="registerPassword">Mot de passe:</label>
+                        <input type="password" id="registerPassword" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="confirmPassword">Confirmer le mot de passe:</label>
+                        <input type="password" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="submit-btn">S'inscrire</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="contenuHeader">
+            <div class="headerContenu">
+                <h1>Bienvenue Chez Éducation Numérique</h1>
+                <p>
+                    Education numérique est une plateforme d'apprentissage innovante
+                    qui révolutionne l'éducation en ligne. Notre approche unique
+                    combine technologie de pointe et pédagogie personnalisée pour
+                    offrir une expérience d'apprentissage optimale.
+                </p>
+            </div>
+            <div id="illustration">
+                <div class="rondGradient">
+                    <div class="rondBlanc">
+                        
+                        <div class="rond"></div>
+                        <div class="triangle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="programme">
+            <div class="programme">
+                <div class="coursExpert">
+                    <div id="coursIcon">
+                        <img src="image/programme1.png" alt="">
+                    </div>
+                    <div class="coursTexte">
+                        <h2>Cours Expert</h2>
+                        <p>
+                            Des parcours adaptés à votre rythme et vos objectifs d'apprentissage.
+                        </p>
+                    </div>
+                </div>
+                <div class="coursExpert">
+                    <div id="coursIcon">
+                        <img src="image/programme2.png" alt="">
+                    </div>
+                    <div class="coursTexte">
+                        <h2>Cours Expert</h2>
+                        <p>
+                            Apprenez avec des professionnels passionnés et expérimentés
+                        </p>
+                    </div>
+                </div>
+                <div class="coursExpert">
+                    <div id="coursIcon">
+                        <img src="image/programme3.png" alt="">
+                    </div>
+                    <div class="coursTexte">
+                        <h2>Cours Expert</h2>
+                        <p>
+                            Apprenez avec des professionnels passionnés et expérimentés
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="etudiants">
+            <h1>Ce que nos étudiants disent</h1>
+            <div class="etudiants">
+                <div class="profil">
+                    <div class="img">
+                        <img src="image/profil1.png" alt="">
+                    </div>
+                    <div class="textImg">
+                        <h5>DAVID Thomas </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel arcu a ipsum tincidunt elementum.</p>
+                    </div>
+                </div>
+                <div class="profil">
+                    <div class="img">
+                        <img src="image/profil2.png" alt="">
+                    </div>
+                    <div class="textImg">
+                        <h5>ANGELINA Marie</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel arcu a ipsum tincidunt elementum.</p>
+                    </div>
+                </div>
+                <div class="profil">
+                    <div class="img">
+                        <img src="image/profil3.png" alt="">
+                    </div>
+                    <div class="textImg">
+                        <h5>DAVID John</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel arcu a ipsum tincidunt elementum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <setion id="cours">
+            <div class="cours">
+                
+            </div>
+        </setion>
+    </main>
+    <footer>
+        <div id="contenuMenuFooter">
+            <div class="piedPage">
+                <h4>À propos</h4>
+                <p>Education est votre partenaire pour un apprentissage innovant et personnalisé.</p>
+            </div>
+            <div class="piedPage">
+                <h4>Liens rapides</h4>
+                <p>
+                    Nos programmes <br>
+                    Blog
+                </p>
+            </div>
+            <div class="piedPage">
+                <h4>Contact</h4>
+                <p>
+                    +33 1 23 45 67 89<br>
+                    email@example.com
+                </p>
+            </div>
+        </div>
+        <div id="contenuFooter">
+            <p> 2024 Éducation numérique  . Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

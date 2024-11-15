@@ -1,0 +1,88 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.136);
+    backdrop-filter: blur(20px);
+    margin: 2% auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 8px;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  #loginModal, #registerModal{
+        color: white;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+  }
+
+  .close:hover {
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.3);
+  }
+
+  .submit-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .submit-btn:hover {
+    background: #45a049;
+  }
