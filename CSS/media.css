@@ -1,13 +1,19 @@
 @media screen and (max-width:420px){
-    #contenuHeader {
+    /* #contenuHeader {
         display: block;
         margin: 0 auto;
         text-align: center;
-    }
+    } */
 
     #contenuHeader .headerContenu{
         text-align: center;
         margin: 0 auto;
         width: 90vw;
+    }
+
+    /* style footer */
+
+    #contenuFooter{
+        border-top: 1px solid white !important;
     }
 }
