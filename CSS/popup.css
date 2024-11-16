@@ -86,3 +86,12 @@
   .submit-btn:hover {
     background: #45a049;
   }
+
+
+
+  @media screen and (max-width:420px){
+    .modal-content {
+      margin: 10% auto;
+      width: 100%;
+    }
+}
