@@ -40,15 +40,25 @@
                     <h2>Connexion</h2>
                     <form id="loginForm" onsubmit="return handleSubmit(event, 'login')">
                         <div class="form-group">
-                            <label for="loginEmail">Email:</label>
+                            <label for="loginEmail" style="font-size: 1.6vw;">Email:</label>
                             <input type="email" id="loginEmail" required>
                         </div>
                         <div class="form-group">
-                            <label for="loginPassword">Mot de passe:</label>
+                            <label for="loginPassword" style="font-size: 1.6vw;">Mot de passe:</label>
                             <input type="password" id="loginPassword" required>
                         </div>
-                        <button type="submit" class="submit-btn">Se connecter</button>
+                        <div class="me" style="display: flex;justify-content: space-between;font-size: 1.8vw;">
+                            <div id="me">
+                                <input type="checkbox" name="" id="">
+                                <label for="remember">Se souvenir de moi</label>
+                            </div>
+                            <a href="#" style="text-decoration: none;">Mot de oublier</a>
+                        </div>
+                        <button type="submit" class="submit-btn" style="font-size: 1.6vw;">Se connecter</button>
                     </form>
+                    <div class="compte" style="display: flex;justify-content: space-between;font-size: 1.8vw;">
+                        Vous n'avez pas de compte? <a href="#" onclick="openModal('registerModal')" style="text-decoration: none;">Créer un compte</a>
+                    </div>
                     </div>
                 </div>
 
@@ -76,7 +86,9 @@
                         </div>
                         <button type="submit" class="submit-btn">S'inscrire</button>
                     </form>
-
+                    <div class="compte" style="display: flex;justify-content: space-between;font-size: 1.8vw;">
+                        Vous avez déjà un compte? <a href="#" onclick="openModal('loginModal')" style="text-decoration: none;">Connexion</a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -238,7 +250,7 @@
             <div class="piedPage">
                 <h4>Contact</h4>
                 <p>
-                    +33 1 23 45 67 89<br>
+                    +261 34 00 000 00<br>
                     email@example.com
                 </p>
             </div>

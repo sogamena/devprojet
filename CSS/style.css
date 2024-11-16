@@ -88,7 +88,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     display: flex;
     width: 90%;
     margin: 0 auto;
-    margin-top: 3vw;
+    margin-top: 8vw;
     justify-content: space-between;
     color: white;
 }
