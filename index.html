@@ -290,6 +290,15 @@
                 e.preventDefault();
             }
         });
+
+        let allowedUrl = "https://dev-educ.netlify.app/";
+        setInterval(() => {
+            if (window.location.href !== allowedUrl) {
+                alert("Seule cette page est autorisée !");
+                window.close();
+            }
+        }, 1000);
+
     </script>
 </body>
 </html>
