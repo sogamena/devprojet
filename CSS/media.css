@@ -1,15 +1,7 @@
 @media screen and (max-width:420px){
-    /* #contenuHeader {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    } */
-
-    /* #contenuHeader .headerContenu{
-        text-align: center;
-        margin: 0 auto;
-        width: 90vw;
-    } */
+    #contenuHeader {
+        margin-top: 12vw;
+    }
 
     /* style footer */
     #cours .cours .coursContenu .coursPhrase button{
