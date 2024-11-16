@@ -10,8 +10,12 @@ body {
 
 /* Style navigation bar */
 nav{
+    position: fixed;
     background-color: #01406D;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.629);
+    width: 100vw;
+    top: 0;
+    z-index: 50;
 }
 nav #nav{
     justify-content: space-between;
@@ -61,6 +65,7 @@ nav #nav .droite .bouton{
     background: none;
     text-align: center;
     align-items: center;
+    margin-top: 0.5vw;
     font-size: 1.8vw;
     -webkit-border-radius: 0.5vw;
     -moz-border-radius: 0.5vw;
