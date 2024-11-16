@@ -158,6 +158,24 @@ nav #nav .droite .bouton:nth-of-type(2){
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
     z-index: 0;
+    animation: triangle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: 3s step-end;
+}
+
+@keyframes triangle {
+    from{
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+}
+    to{
+        background: rgb(45, 197, 189);
+}
 }
 /* #contenuHeader #illustration .rondGradient .rondBlanc .triangle{
     margin-top: 5vw;
@@ -213,14 +231,21 @@ nav #nav .droite .bouton:nth-of-type(2){
     -ms-border-radius: 1vw;
     -o-border-radius: 1vw;
 }
+.programme .coursExpert:hover{
+    background: #dddddd;
+}
 .programme .coursExpert #coursIcon img{
     width: 30%;
 }
 .programme .coursExpert .coursTexte h2{
-    font-size: 3vw;
+    font-size: 2.5vw;
+}
+.programme .coursExpert .coursTexte{
+    width: 90%;
+    margin: 0 auto;
 }
 .programme .coursExpert .coursTexte p{
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 
 /* Section ce qui nous etudiants dit */
@@ -306,7 +331,7 @@ nav #nav .droite .bouton:nth-of-type(2){
     line-height: 2.4vw;
 }
 #cours .cours .coursContenu .coursPhrase button{
-    margin-top: -1vw;
+    margin-top: 1vw;
     width: 22vw;
     border: none;
     color: white;
@@ -387,6 +412,3 @@ footer{
     padding: 10vw auto;
     padding-top: 1.5vw;
 }
-
-
-

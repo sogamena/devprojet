@@ -12,6 +12,10 @@
     } */
 
     /* style footer */
+    #cours .cours .coursContenu .coursPhrase button{
+        margin-top: -3vw;
+    }
+    
 
     #contenuFooter{
         border-top: 1px solid white !important;

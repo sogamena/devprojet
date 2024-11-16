@@ -41,3 +41,10 @@ function openModal(modalId) {
       event.target.style.display = "none";
     }
   }
+
+
+  const Cours = document.querySelector('cours');
+
+  Cours.onclick = function() {
+    this.style.backgroundColor = 'red';
+  };
