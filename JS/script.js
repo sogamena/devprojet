@@ -43,8 +43,3 @@ function openModal(modalId) {
   }
 
 
-  const Cours = document.querySelector('cours');
-
-  Cours.onclick = function() {
-    this.style.backgroundColor = 'red';
-  };
